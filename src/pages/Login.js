@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        'https://crm-backend-production-a717.up.railway.app/pi/auth/login',
+        'https://crm-backend-production-a717.up.railway.app/api/auth/login',
         { email, password }
       );
       localStorage.setItem('token', res.data.token);
